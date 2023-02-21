@@ -1,3 +1,11 @@
+function getComputerChoice(){
+    const choices = ['rock','paper','scissors'];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return choices[randomIndex];
+}
+
+
+
 function playRound(playerSelection, computerSelection){
     if(playerSelection === computerSelection)
     {
@@ -17,5 +25,9 @@ function playRound(playerSelection, computerSelection){
             return "You Lose!"
         }
 }
+
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
 
     
