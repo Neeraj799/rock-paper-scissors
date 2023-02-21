@@ -5,7 +5,6 @@ function getComputerChoice(){
 }
 
 
-
 function playRound(playerSelection, computerSelection){
     if(playerSelection === computerSelection)
     {
@@ -27,7 +26,8 @@ function playRound(playerSelection, computerSelection){
 }
 
 
-const playerSelection = "rock";
+let playerSelection = prompt("Enter a choice");
 const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection,computerSelection));
 
     
