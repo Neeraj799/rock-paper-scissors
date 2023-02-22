@@ -25,9 +25,11 @@ function playRound(playerSelection, computerSelection){
         }
 }
 
-
-let playerSelection = prompt("Enter a choice");
+function playGame(){
+let playerSelection = document.getElementById("Enter a choice").value.toLowerCase();
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection,computerSelection));
+let result = playRound(playerSelection,computerSelection);
+document.getElementById("game result").textContent = result;
 
+}
     
